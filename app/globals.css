@@ -31,6 +31,10 @@ body {
   color: var(--text-primary);
   font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* 禁止 Android/iOS 橡皮筋滚动 */
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100dvh;
 }
 
 @keyframes blink {
